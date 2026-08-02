@@ -1,0 +1,32 @@
+[build]
+publish = "site"
+
+[[redirects]]
+from = "/contact"
+to = "/contact.html"
+status = 200
+
+[[redirects]]
+from = "/services"
+to = "/services.html"
+status = 200
+
+[[redirects]]
+from = "/"
+to = "/index.html"
+status = 200
+
+[[redirects]]
+from = "/contact-draft"
+to = "/contact.html"
+status = 200
+
+[[redirects]]
+from = "/services-draft"
+to = "/services.html"
+status = 200
+
+[[redirects]]
+from = "/index-draft"
+to = "/index.html"
+status = 200
