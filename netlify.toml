@@ -15,18 +15,3 @@ status = 200
 from = "/"
 to = "/index.html"
 status = 200
-
-[[redirects]]
-from = "/contact-draft"
-to = "/contact.html"
-status = 200
-
-[[redirects]]
-from = "/services-draft"
-to = "/services.html"
-status = 200
-
-[[redirects]]
-from = "/index-draft"
-to = "/index.html"
-status = 200
