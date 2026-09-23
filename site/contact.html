@@ -27,147 +27,148 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="site.css">
 <link rel="stylesheet" href="contact.css">
 <script src="contact.js"></script>
 </head>
 <body>
 <x-dc>
 
-<div style="min-height: 100vh; display: flex; flex-direction: column;">
+<div class="page">
 
-  <header style="border-bottom: 1px solid #E2E7EB;">
-    <div style="height: 4px; background: linear-gradient(90deg, #3FAE2A, #1C75BC);"></div>
-    <nav aria-label="Main" style="max-width: 1100px; margin: 0 auto; padding: 10px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
-      <a href="/" aria-label="Buffalo.Accountants home"><img src="logo.svg" width="952" height="232" alt="Buffalo.Accountants — Property Accounting Specialists" style="height: 100px; width: auto; display: block;"></a>
-      <div style="display: flex; gap: 32px; align-items: center;">
-        <a href="/" style="font-size: 17px; font-weight: 600; color: #33383D;">Home</a>
-        <a href="/services" style="font-size: 17px; font-weight: 600; color: #33383D;">Services</a>
-        <a href="/contact" aria-current="page" style="font-size: 17px; font-weight: 700; color: #3FAE2A;">Contact</a>
-        <a href="/contact" style="font-size: 16px; font-weight: 700; color: #FFFFFF; background: #1C75BC; padding: 11px 20px; border-radius: 4px;" style-hover="background: #3FAE2A; color: #FFFFFF;">Free Needs Assessment</a>
+  <header class="site-header">
+    <div class="brand-bar"></div>
+    <nav aria-label="Main" class="nav">
+      <a href="/" aria-label="Buffalo.Accountants home"><img src="logo.svg" width="952" height="232" alt="Buffalo.Accountants — Property Accounting Specialists" class="logo"></a>
+      <div class="nav-links">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/services" class="nav-link">Services</a>
+        <a href="/contact" aria-current="page" class="nav-link">Contact</a>
+        <a href="/contact" class="btn btn-primary">Free Needs Assessment</a>
       </div>
     </nav>
   </header>
 
-  <main style="flex: 1;">
-    <section style="max-width: 1100px; margin: 0 auto; padding: 72px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 56px; align-items: start;">
+  <main class="site-main">
+    <section class="split split--intro">
 
-      <div style="display: flex; flex-direction: column; gap: 20px;">
-        <h1 style="margin: 0; font-size: 40px; font-weight: 800; line-height: 1.2;">Schedule a free needs assessment.</h1>
-        <p style="margin: 0; font-size: 18px; color: #4A4F54; line-height: 1.65;">Tell us about your portfolio and current systems — we'll show you exactly where we can take work off your plate.</p>
+      <div class="intro">
+        <h1 class="page-title">Schedule a free needs assessment.</h1>
+        <p class="page-lede">Tell us about your portfolio and current systems — we'll show you exactly where we can take work off your plate.</p>
 
-        <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 8px;">
-          <div style="display: flex; gap: 16px; align-items: baseline;">
-            <span style="font-size: 20px; font-weight: 800; color: #3FAE2A;">1</span>
-            <p style="margin: 0; font-size: 16px; line-height: 1.6;"><strong>Free needs assessment</strong> — a conversation about your portfolio, asset mix, and current systems. We look at how your books are handled today, where the month-end close slows down, and which tasks are pulling your team away from managing properties.</p>
+        <div class="steps">
+          <div class="step">
+            <span class="step-num">1</span>
+            <p class="step-text"><strong>Free needs assessment</strong> — a conversation about your portfolio, asset mix, and current systems. We look at how your books are handled today, where the month-end close slows down, and which tasks are pulling your team away from managing properties.</p>
           </div>
-          <div style="display: flex; gap: 16px; align-items: baseline;">
-            <span style="font-size: 20px; font-weight: 800; color: #3FAE2A;">2</span>
-            <p style="margin: 0; font-size: 16px; line-height: 1.6;"><strong>Fixed-fee proposal</strong> — scoped to your portfolio, with hourly rates for specialized work. You see exactly what is included and what it costs before anything starts.</p>
+          <div class="step">
+            <span class="step-num">2</span>
+            <p class="step-text"><strong>Fixed-fee proposal</strong> — scoped to your portfolio, with hourly rates for specialized work. You see exactly what is included and what it costs before anything starts.</p>
           </div>
-          <div style="display: flex; gap: 16px; align-items: baseline;">
-            <span style="font-size: 20px; font-weight: 800; color: #3FAE2A;">3</span>
-            <p style="margin: 0; font-size: 16px; line-height: 1.6;"><strong>Structured onboarding</strong> — chart of accounts, opening balances, and a month-end close calendar. Everyone knows what is due, who owns it, and when the books will be closed each month.</p>
+          <div class="step">
+            <span class="step-num">3</span>
+            <p class="step-text"><strong>Structured onboarding</strong> — chart of accounts, opening balances, and a month-end close calendar. Everyone knows what is due, who owns it, and when the books will be closed each month.</p>
           </div>
         </div>
       </div>
 
-      <div style="background: #F4F7F5; padding: 40px; display: flex; flex-direction: column; gap: 20px; border-top: 4px solid; border-image: linear-gradient(90deg, #3FAE2A, #1C75BC) 1;">
-        <h2 style="margin: 0; font-size: 22px; font-weight: 800;">Tell us about your portfolio</h2>
+      <div class="form-panel">
+        <h2 class="panel-title">Tell us about your portfolio</h2>
 
-        <form action="https://formspree.io/f/xqervwjb" method="POST" style="display: flex; flex-direction: column; gap: 16px;">
+        <form action="https://formspree.io/f/xqervwjb" method="POST" class="contact-form">
           <input type="hidden" name="_subject" value="New free needs assessment request">
 
-          <div style="display: flex; flex-direction: column; gap: 6px;">
-            <label for="name" style="font-size: 14px; font-weight: 700; color: #33383D;">Name <span style="color: #1C75BC;">*</span></label>
-            <input id="name" name="name" type="text" required style="font: inherit; font-size: 15px; padding: 11px 12px; border: 1px solid #E2E7EB; border-radius: 4px; box-sizing: border-box; width: 100%;">
+          <div class="field">
+            <label for="name" class="field-label">Name <span class="required">*</span></label>
+            <input id="name" name="name" type="text" required class="field-input">
           </div>
 
-          <div style="display: flex; flex-direction: column; gap: 6px;">
-            <label for="company" style="font-size: 14px; font-weight: 700; color: #33383D;">Company name</label>
-            <input id="company" name="company" type="text" style="font: inherit; font-size: 15px; padding: 11px 12px; border: 1px solid #E2E7EB; border-radius: 4px; box-sizing: border-box; width: 100%;">
+          <div class="field">
+            <label for="company" class="field-label">Company name</label>
+            <input id="company" name="company" type="text" class="field-input">
           </div>
 
-          <div style="display: flex; flex-direction: column; gap: 6px;">
-            <label for="phone" style="font-size: 14px; font-weight: 700; color: #33383D;">Phone number <span style="color: #1C75BC;">*</span></label>
-            <input id="phone" name="phone" type="tel" required style="font: inherit; font-size: 15px; padding: 11px 12px; border: 1px solid #E2E7EB; border-radius: 4px; box-sizing: border-box; width: 100%;">
+          <div class="field">
+            <label for="phone" class="field-label">Phone number <span class="required">*</span></label>
+            <input id="phone" name="phone" type="tel" required class="field-input">
           </div>
 
-          <div style="display: flex; flex-direction: column; gap: 6px;">
-            <label for="email" style="font-size: 14px; font-weight: 700; color: #33383D;">Email <span style="color: #1C75BC;">*</span></label>
-            <input id="email" name="email" type="email" required style="font: inherit; font-size: 15px; padding: 11px 12px; border: 1px solid #E2E7EB; border-radius: 4px; box-sizing: border-box; width: 100%;">
+          <div class="field">
+            <label for="email" class="field-label">Email <span class="required">*</span></label>
+            <input id="email" name="email" type="email" required class="field-input">
           </div>
 
-          <div style="display: flex; flex-direction: column; gap: 6px;">
-            <label for="needs" style="font-size: 14px; font-weight: 700; color: #33383D;">Description of needs</label>
-            <textarea id="needs" name="needs" rows="4" style="font: inherit; font-size: 15px; padding: 11px 12px; border: 1px solid #E2E7EB; border-radius: 4px; box-sizing: border-box; width: 100%; resize: vertical;"></textarea>
+          <div class="field">
+            <label for="needs" class="field-label">Description of needs</label>
+            <textarea id="needs" name="needs" rows="4" class="field-input"></textarea>
           </div>
 
-          <button type="submit" style="font: inherit; font-size: 16px; font-weight: 700; color: #FFFFFF; background: #3FAE2A; padding: 14px 26px; border: none; border-radius: 4px; cursor: pointer;" style-hover="background: #1C75BC; color: #FFFFFF;">Send needs assessment request</button>
+          <button type="submit" class="btn btn-green">Send needs assessment request</button>
         </form>
 
-        <div style="display: flex; flex-direction: column; gap: 6px; border-top: 1px solid #E2E7EB; padding-top: 20px;">
-          <p style="margin: 0; font-size: 13px; color: #4A4F54;">Prefer to reach us directly?</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 6px 16px;">
-            <a href="mailto:info@buffalo.accountants" style="font-size: 15px; font-weight: 700; color: #1C75BC;">info@buffalo.accountants</a>
-            <a href="tel:+18888016424" style="font-size: 15px; font-weight: 700; color: #1C75BC;">+1-888-801-6424</a>
+        <div class="direct">
+          <p class="direct-label">Prefer to reach us directly?</p>
+          <div class="direct-links">
+            <a href="mailto:info@buffalo.accountants" class="direct-link">info@buffalo.accountants</a>
+            <a href="tel:+18888016424" class="direct-link">+1-888-801-6424</a>
           </div>
         </div>
-        <p style="margin: 0; font-size: 13px; color: #4A4F54; line-height: 1.6;">We work in AppFolio, MRI, Yardi, and other property management platforms.</p>
+        <p class="panel-note">We work in AppFolio, MRI, Yardi, and other property management platforms.</p>
       </div>
     </section>
 
-    <section aria-labelledby="prepare-heading" style="max-width: 1100px; margin: 0 auto; padding: 0 24px 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 56px; align-items: start;">
-      <div style="display: flex; flex-direction: column; gap: 14px;">
-        <h2 id="prepare-heading" style="margin: 0; font-size: 26px; font-weight: 800;">What to have ready</h2>
-        <p style="margin: 0; font-size: 16px; color: #4A4F54; line-height: 1.65;">You don't need to prepare anything formal, but the assessment is more useful if you can tell us a few things about how your accounting runs today:</p>
-        <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: #33383D;">
+    <section aria-labelledby="prepare-heading" class="split split--details">
+      <div class="details-col">
+        <h2 id="prepare-heading" class="section-title">What to have ready</h2>
+        <p class="body-text">You don't need to prepare anything formal, but the assessment is more useful if you can tell us a few things about how your accounting runs today:</p>
+        <ul class="checklist">
           <li>Which property management or accounting platform you use (AppFolio, MRI, Yardi, or something else)</li>
           <li>Roughly how many properties, units, and ownership entities are in your portfolio</li>
           <li>Your asset mix and who handles the books now, whether in-house staff, a bookkeeper, or another firm</li>
           <li>Where things break down: late closes, reconciliation backlogs, owner reporting, or audit prep</li>
         </ul>
       </div>
-      <div style="display: flex; flex-direction: column; gap: 14px;">
-        <h2 style="margin: 0; font-size: 26px; font-weight: 800;">Who we work with</h2>
-        <p style="margin: 0; font-size: 16px; color: #4A4F54; line-height: 1.65;">Buffalo.Accountants provides CFO, controller, and property accounting services for property owners and management companies. We work inside the platforms you already use, including AppFolio, MRI, and Yardi, so your team doesn't have to migrate systems or learn new software to work with us.</p>
-        <p style="margin: 0; font-size: 16px; color: #4A4F54; line-height: 1.65;">Whether you need a full outsourced accounting function or senior-level help with a specific problem, the needs assessment is where we figure out the right scope together.</p>
+      <div class="details-col">
+        <h2 class="section-title">Who we work with</h2>
+        <p class="body-text">Buffalo.Accountants provides CFO, controller, and property accounting services for property owners and management companies. We work inside the platforms you already use, including AppFolio, MRI, and Yardi, so your team doesn't have to migrate systems or learn new software to work with us.</p>
+        <p class="body-text">Whether you need a full outsourced accounting function or senior-level help with a specific problem, the needs assessment is where we figure out the right scope together.</p>
       </div>
     </section>
 
-    <section aria-labelledby="faq-heading" style="background: #F4F7F5;">
-      <div style="max-width: 800px; margin: 0 auto; padding: 56px 24px 72px; display: flex; flex-direction: column; gap: 24px;">
-        <h2 id="faq-heading" style="margin: 0; font-size: 26px; font-weight: 800;">Frequently asked questions</h2>
+    <section aria-labelledby="faq-heading" class="faq">
+      <div class="faq-inner">
+        <h2 id="faq-heading" class="section-title">Frequently asked questions</h2>
         <div>
-          <h3 style="margin: 0 0 6px; font-size: 18px; font-weight: 700;">What happens during the free needs assessment?</h3>
-          <p style="margin: 0; font-size: 16px; color: #4A4F54; line-height: 1.65;">It's a conversation about your portfolio, asset mix, and current systems. We look at where your accounting work is getting stuck and where we can take it off your plate, then follow up with a fixed-fee proposal scoped to your portfolio.</p>
+          <h3 class="faq-question">What happens during the free needs assessment?</h3>
+          <p class="body-text">It's a conversation about your portfolio, asset mix, and current systems. We look at where your accounting work is getting stuck and where we can take it off your plate, then follow up with a fixed-fee proposal scoped to your portfolio.</p>
         </div>
         <div>
-          <h3 style="margin: 0 0 6px; font-size: 18px; font-weight: 700;">Which property management platforms do you work in?</h3>
-          <p style="margin: 0; font-size: 16px; color: #4A4F54; line-height: 1.65;">We work in AppFolio, MRI, Yardi, and other property management platforms, so your team can keep using the system it already knows.</p>
+          <h3 class="faq-question">Which property management platforms do you work in?</h3>
+          <p class="body-text">We work in AppFolio, MRI, Yardi, and other property management platforms, so your team can keep using the system it already knows.</p>
         </div>
         <div>
-          <h3 style="margin: 0 0 6px; font-size: 18px; font-weight: 700;">How is pricing structured?</h3>
-          <p style="margin: 0; font-size: 16px; color: #4A4F54; line-height: 1.65;">Ongoing work is quoted as a fixed fee scoped to your portfolio. Specialized work is billed at hourly rates, which are spelled out in the proposal so there are no surprises.</p>
+          <h3 class="faq-question">How is pricing structured?</h3>
+          <p class="body-text">Ongoing work is quoted as a fixed fee scoped to your portfolio. Specialized work is billed at hourly rates, which are spelled out in the proposal so there are no surprises.</p>
         </div>
         <div>
-          <h3 style="margin: 0 0 6px; font-size: 18px; font-weight: 700;">What services do you provide?</h3>
-          <p style="margin: 0; font-size: 16px; color: #4A4F54; line-height: 1.65;">We provide CFO, controller, and property accounting services for property owners and managers. See our <a href="/services" style="color: #1C75BC; font-weight: 700;">services page</a> for details.</p>
+          <h3 class="faq-question">What services do you provide?</h3>
+          <p class="body-text">We provide CFO, controller, and property accounting services for property owners and managers. See our <a href="/services" class="text-link">services page</a> for details.</p>
         </div>
         <div>
-          <h3 style="margin: 0 0 6px; font-size: 18px; font-weight: 700;">What does onboarding involve?</h3>
-          <p style="margin: 0; font-size: 16px; color: #4A4F54; line-height: 1.65;">Onboarding follows a set structure: we establish your chart of accounts, confirm opening balances, and agree on a month-end close calendar so everyone knows what is due and when.</p>
+          <h3 class="faq-question">What does onboarding involve?</h3>
+          <p class="body-text">Onboarding follows a set structure: we establish your chart of accounts, confirm opening balances, and agree on a month-end close calendar so everyone knows what is due and when.</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer style="border-top: 1px solid #E2E7EB; padding: 32px 24px;">
-    <div style="max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap;">
-      <div style="font-size: 14px; color: #4A4F54; line-height: 1.7;">
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-contact">
         <strong>Buffalo.Accountants</strong><br>
         <a href="mailto:info@buffalo.accountants">info@buffalo.accountants</a> · <a href="tel:+18888016424">+1-888-801-6424</a>
       </div>
-      <div style="display: flex; gap: 20px; font-size: 14px; font-weight: 600;">
+      <div class="footer-links">
         <a href="/">Home</a>
         <a href="/services">Services</a>
         <a href="/contact">Contact</a>
