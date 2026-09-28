@@ -1,0 +1,22 @@
+# Buffalo.Accountants
+
+> Buffalo.Accountants provides outsourced property accounting, controller, and fractional CFO services for commercial and multifamily real estate portfolios. Headquartered in Buffalo, NY, serving property portfolios nationwide.
+
+Buffalo.Accountants works with multifamily operators, asset managers, property managers, and commercial owners (office, retail, industrial, and multifamily). The firm works inside the platform a client already uses: AppFolio, Yardi Voyager, Yardi Breeze, MRI Software, QuickBooks, or Sage.
+
+Core property accounting is billed as a fixed monthly fee; specialized work is billed hourly or by project. New clients start with a free needs assessment, followed by a fixed-fee proposal and a structured onboarding (chart of accounts, opening balances, and a month-end close calendar).
+
+- Email: info@buffalo.accountants
+- Phone: +1-888-801-6424
+
+## Pages
+
+- [Home](https://buffalo.accountants/): Overview of the firm, who it serves, and the platforms it works in
+- [Services](https://buffalo.accountants/services): Full menu of services, grouped into three engagement types
+- [Contact](https://buffalo.accountants/contact): Schedule a free needs assessment, what to have ready, and FAQs on pricing and onboarding
+
+## Services
+
+- [Core Property Accounting](https://buffalo.accountants/services): Fixed monthly fee. Accounts payable, accounts receivable and tenant billing, bank reconciliations, 3-way trust account reconciliation, security deposit administration, management fee billing, owner distributions, financial statement preparation, and GL maintenance.
+- [Specialized Services](https://buffalo.accountants/services): Hourly or project-based. 1099 preparation and filing, CAM reconciliations, utility billback/RUBS, property and portfolio onboarding, acquisition and disposition due diligence, budgets and reforecasts, fixed asset and capex tracking, COI compliance tracking, and sales/rental tax compliance.
+- [Controller & Advisory](https://buffalo.accountants/services): Fractional CFO. Interim or outsourced controller, KPI and owner dashboard reporting, 13-week cash flow forecasting, lender compliance reporting, debt schedule and covenant monitoring, month-end close design, SOPs and segregation of duties, year-end audit prep and CPA liaison, and PM software optimization.
